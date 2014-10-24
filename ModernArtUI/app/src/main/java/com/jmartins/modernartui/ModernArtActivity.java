@@ -73,7 +73,7 @@ public class ModernArtActivity extends Activity {
     private void updateColors(TextView box, int originalColor) {
         if (originalColor != Color.WHITE && originalColor != Color.GRAY) {
             int seekProgress = seekBar.getProgress();
-            box.setBackgroundColor(originalColor + (seekProgress * 0x100));
+            box.setBackgroundColor(originalColor + seekProgress);
         }
     }
 
